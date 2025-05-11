@@ -16,8 +16,8 @@ _p0 = 100.0  # Amplitude des Dipolvektors
 _Wellenlaenge = 256.0  # Wellenlaenge (Simulationseinheiten)
 _Lamda_viertel = _Wellenlaenge / 4.0
 _w = 2 * np.pi * _c / _Wellenlaenge  # Kreisfrequenz
-_Periode = 120  # Anzahl Zeitschritte pro Periode 256 recommended
-_animation_duration = 5.0  # Animationsdauer in Sekunden für eine Periode
+_Periode = 100  # Anzahl Zeitschritte pro Periode 256 recommended
+_animation_duration = 3.0  # Animationsdauer in Sekunden für eine Periode
 _T = _Wellenlaenge / _c  # Periodendauer
 _dt = _T / _Periode  # Zeitschritt
 
