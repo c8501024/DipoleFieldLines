@@ -1,6 +1,6 @@
 # Dipole Field Animation Visualizations
 
-This repository contains three Python scripts for simulating and visualizing the electromagnetic fields of a Hertzian or short dipole. It includes both 2D and 3D visualizations of electric and magnetic fields as well as the energy (Poynting vector) flow.
+This repository contains three Python scripts for simulating and visualizing the electromagnetic fields of a Hertzian dipole (Half wave dipole currently not fully supported). It includes both 2D and 3D visualizations of electric and magnetic fields as well as the energy (Poynting vector) flow.
 
 ---
 
@@ -135,13 +135,7 @@ This project is licensed under the **MIT License**.
 
 ## 🙋 Citation and Acknowledgement
 
-If you use this software in teaching or research, please cite:
-
-**Dominik Mair**, University of Innsbruck
-
-> *"Visual Simulation of Electromagnetic Fields of Dipole Sources"*
-
-A `CITATION.cff` file can be provided upon request for citation formatting in BibTeX, EndNote, etc.
+If you use this software in teaching or research, please cite using the given doi.
 
 ---
 
