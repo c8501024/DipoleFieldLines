@@ -540,7 +540,7 @@ anim = FuncAnimation(fig, update, frames=int(_Periode), interval=100, blit=False
 
 # Animation automatisch als GIF-Datei speichern (optional)
 anim.save(
-    "magneticfield.gif",
+    "H-field_2D.gif",
     writer="pillow",
     fps=int(round(_Periode / _animation_duration)),
     dpi=300,

@@ -8,9 +8,9 @@ This repository contains three Python scripts for simulating and visualizing the
 
 | Script                        | Visualization                          | Output Format                             | Notes                                                                 |
 |------------------------------|----------------------------------------|-------------------------------------------|-----------------------------------------------------------------------|
-| `DIPOLANIMATION_E_ARROWS.py` | E-field lines      | **Animated GIF** (created via Matplotlib) | 2D   |
-| `DIPOLANIMATION_H_ARROWS.py` | H-field lines      | **Animated GIF** (created via Matplotlib) | 2D                       |
-| `DIPOLANIMATION_EH_3D.py`    | E- and H-field lines     | **Folder of rendered frames**             | Saves 3D images to `DipolAnimation/`; user must manually compile to GIF. |
+| `DIPOLANIMATION_E_ARROWS.py` | E-field lines      | **Animated GIF** E-field-2D.gif | 2D   |
+| `DIPOLANIMATION_H_ARROWS.py` | H-field lines      | **Animated GIF** H-field-2D.gif | 2D                       |
+| `DIPOLANIMATION_EH_3D.py`    | E- and H-field lines     | **Animated GIF** EH-Field-3D.gif          | 3D |
 
 ---
 

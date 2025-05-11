@@ -4,6 +4,8 @@ import math  # Für mathematische Funktionen wie radians, cos,
 import os
 import shutil
 import sys
+import imageio.v2 as imageio
+import os
 
 
 if os.path.exists("DipolAnimation"):
@@ -25,8 +27,8 @@ _p0 = 100.0  # Amplitude des Dipolvektors
 _Wellenlaenge = 256.0  # Wellenlänge (Simulationseinheiten)
 _Lamda_viertel = _Wellenlaenge / 4.0
 _w = 2 * np.pi * _c / _Wellenlaenge  # Kreisfrequenz
-_Periode = 100  # Anzahl Zeitschritte pro Periode
-# _animation_duration = 5.0  # Animationsdauer in Sekunden für eine Periode
+_Periode = 5  # Anzahl Zeitschritte pro Periode
+_animation_duration = 5.0  # Animationsdauer in Sekunden für eine Periode
 _T = _Wellenlaenge / _c  # Periodendauer
 _dt = _T / _Periode  # Zeitschritt
 
@@ -638,4 +640,13 @@ for frame in range(int(_Periode)):
         filename=f"./DipolAnimation/DIPOL{frame}.png",
     )
     plotter.close()
-    print("DIPOL{frame}.png added in directory ./DipolAnimation")
+
+
+images = []
+for filename in sorted(os.listdir("DipolAnimation")):
+    if filename.endswith(".png"):
+        images.append(imageio.imread(os.path.join("DipolAnimation", filename)))
+
+imageio.mimsave(
+    "EH-field-3D.gif", images, fps=int(round(_Periode / _animation_duration))
+)

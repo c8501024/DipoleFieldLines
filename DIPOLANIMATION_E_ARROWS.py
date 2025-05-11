@@ -719,7 +719,7 @@ def update(frame):
 anim = FuncAnimation(fig, update, frames=int(_Periode), interval=100, blit=True)
 # Animation automatisch als GIF-Datei (eine Periodendauer) speichern
 anim.save(
-    "dipol_E_field.gif",
+    "E-field-2D.gif",
     writer="pillow",
     fps=int(round(_Periode / _animation_duration)),
     dpi=300,
