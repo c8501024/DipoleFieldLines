@@ -8,9 +8,9 @@ This repository contains three Python scripts for simulating and visualizing the
 
 | Script                        | Visualization                          | Output Format                             | Notes                                                                 |
 |------------------------------|----------------------------------------|-------------------------------------------|-----------------------------------------------------------------------|
-| `DIPOLANIMATION_E_ARROWS.py` | E-field lines and Poynting vector      | **Animated GIF** (created via Matplotlib) | Shows directional E-field and energy flow. Automatically opens GUI.   |
-| `DIPOLANIMATION_H_ARROWS.py` | H-field lines (circular) and Poynting  | **Animated GIF** (created via Matplotlib) | Adds magnetic field line animation to E-fields.                       |
-| `DIPOLANIMATION_EH_3D.py`    | E- and H-fields in 3D using PyVista    | **Folder of rendered frames**             | Saves images to `DipolAnimation/`; user must manually compile to GIF. |
+| `DIPOLANIMATION_E_ARROWS.py` | E-field lines      | **Animated GIF** (created via Matplotlib) | 2D   |
+| `DIPOLANIMATION_H_ARROWS.py` | H-field lines      | **Animated GIF** (created via Matplotlib) | 2D                       |
+| `DIPOLANIMATION_EH_3D.py`    | E- and H-field lines     | **Folder of rendered frames**             | Saves 3D images to `DipolAnimation/`; user must manually compile to GIF. |
 
 ---
 
