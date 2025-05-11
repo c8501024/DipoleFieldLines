@@ -68,6 +68,9 @@ imageio.mimsave("animation.gif", images, fps=20)
 ---
 
 ## 📦 Dependencies
+Python version:
+
+3.12.7
 
 Install dependencies with:
 
