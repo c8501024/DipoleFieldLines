@@ -43,7 +43,7 @@ python DIPOLANIMATION_H_ARROWS.py
 python DIPOLANIMATION_EH_3D.py
 ```
 
-> ⚠️ This creates a directory called `DipolAnimation/` with one PNG image per time step. You must compile these into a GIF manually (see below).
+> ⚠️ This creates a directory called `DipolAnimation/` with one PNG image per time step. Currently for debugging only.
 
 ---
 
