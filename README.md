@@ -123,7 +123,11 @@ This project is licensed under the **MIT License**.
 
 ## 🙋 Citation and Acknowledgement
 
-If you use this software in teaching or research, please cite using the given doi.
+If you use this software in teaching, research, or publication, please cite:
+
+Dominik Mair, University of Innsbruck
+
+"Hertzian Dipole Field Animation Tools"DOI: 10.5281/zenodo.15382818
 
 ---
 

@@ -335,7 +335,7 @@ ax.set_ylim(-_Wellenlaenge * _Groessenfaktor, _Wellenlaenge * _Groessenfaktor)
 # ax.set_ylabel("y in m")
 ax.set_xlabel(r"x / $\lambda$")
 ax.set_ylabel(r"z / $\lambda$")
-ax.set_title("Hertzscher Dipol - Feldlinien")
+ax.set_title("Hertzian Dipole - E-Fieldlines")
 
 # Anpassung der Ticks für die x- und y-Achse
 ticks = np.arange(

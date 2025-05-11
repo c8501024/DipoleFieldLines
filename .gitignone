@@ -11,6 +11,9 @@ ENV/
 env.bak/
 *.env
 
+# Images
+.png
+
 # dotenv environment variables
 .env
 .env.*

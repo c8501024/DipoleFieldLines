@@ -5,7 +5,7 @@ import os
 import shutil
 import sys
 import imageio.v2 as imageio
-import os
+import re
 
 
 if os.path.exists("DipolAnimation"):
@@ -27,8 +27,8 @@ _p0 = 100.0  # Amplitude des Dipolvektors
 _Wellenlaenge = 256.0  # Wellenlänge (Simulationseinheiten)
 _Lamda_viertel = _Wellenlaenge / 4.0
 _w = 2 * np.pi * _c / _Wellenlaenge  # Kreisfrequenz
-_Periode = 5  # Anzahl Zeitschritte pro Periode
-_animation_duration = 5.0  # Animationsdauer in Sekunden für eine Periode
+_Periode = 100  # Anzahl Zeitschritte pro Periode
+_animation_duration = 3.0  # Animationsdauer in Sekunden für eine Periode
 _T = _Wellenlaenge / _c  # Periodendauer
 _dt = _T / _Periode  # Zeitschritt
 
@@ -416,7 +416,7 @@ def progress_bar(current, total, length=40):
 for frame in range(int(_Periode)):
     # Initiale Berechnungen für t = 0
     _t = (frame) * _dt  # 0.0  # aktuelle Zeit
-    progress_bar(frame, _Periode)
+    progress_bar(frame + 1, _Periode)
     Grenzlinien_bestimmen(_t)
     LinienStarts_bestimmen()
 
@@ -642,10 +642,18 @@ for frame in range(int(_Periode)):
     plotter.close()
 
 
+# Natural sort key: extract numeric part from filename
+def numeric_key(filename):
+    match = re.search(r"(\d+)", filename)
+    return int(match.group(1)) if match else -1
+
+
 images = []
-for filename in sorted(os.listdir("DipolAnimation")):
-    if filename.endswith(".png"):
-        images.append(imageio.imread(os.path.join("DipolAnimation", filename)))
+file_list = sorted(
+    [f for f in os.listdir("DipolAnimation") if f.endswith(".png")], key=numeric_key
+)
+for filename in file_list:
+    images.append(imageio.imread(os.path.join("DipolAnimation", filename)))
 
 imageio.mimsave(
     "EH-field-3D.gif", images, fps=int(round(_Periode / _animation_duration))
