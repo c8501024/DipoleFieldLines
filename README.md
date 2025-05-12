@@ -137,13 +137,18 @@ If you use this software in teaching, research, or publication, please cite:
   doi          = {10.5281/zenodo.15382818},
   url          = {https://doi.org/10.5281/zenodo.15382818}
 }
+```
 ---
 
-## 📷 Preview
+## 🖼️ Preview
 
-*Example animations or screenshots coming soon.*
+Here are some example animations of the dipole field:
 
-![Alt Text](EH-field-3D.gif)
-![Alt Text](E-field-2D.gif)
-![Alt Text](H-field-2D.gif)
----
+**EH Field (3D)**  
+![EH Field](EH-field-3D.gif)
+
+**E Field (2D)**  
+![E Field](E-field-2D.gif)
+
+**H Field (2D)**  
+![H Field](H-field-2D.gif)
