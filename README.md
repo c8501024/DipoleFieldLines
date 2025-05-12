@@ -125,10 +125,18 @@ This project is licensed under the **MIT License**.
 
 If you use this software in teaching, research, or publication, please cite:
 
-Dominik Mair, University of Innsbruck
+> **Dominik Mair**, *Hertzian Dipole Field Animation Tools*, University of Innsbruck, 2025.  
+> DOI: [10.5281/zenodo.15382818](https://doi.org/10.5281/zenodo.15382818)
 
-"Hertzian Dipole Field Animation Tools"DOI: 10.5281/zenodo.15382818
-
+```bibtex
+@misc{mair2025dipole,
+  author       = {Dominik Mair},
+  title        = {Hertzian Dipole Field Animation Tools},
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.15382818},
+  url          = {https://doi.org/10.5281/zenodo.15382818}
+}
 ---
 
 ## 📷 Preview
