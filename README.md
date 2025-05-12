@@ -145,10 +145,10 @@ If you use this software in teaching, research, or publication, please cite:
 Here are some example animations of the dipole field:
 
 **EH Field (3D)**  
-![EH Field](EH-field-3D.gif)
+<video src="EH-field-3D.mp4" autoplay loop muted playsinline width="600"></video>
 
 **E Field (2D)**  
-![E Field](E-field-2D.gif)
+<video src="E-field-2D.mp4" autoplay loop muted playsinline width="600"></video>
 
 **H Field (2D)**  
-![H Field](H-field-2D.gif)
+<video src="H-field-2D.mp4" autoplay loop muted playsinline width="600"></video>
