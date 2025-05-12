@@ -21,7 +21,6 @@ _animation_duration = 3.0  # Animationsdauer in Sekunden für eine Periode
 _T = _Wellenlaenge / _c  # Periodendauer
 _dt = _T / _Periode  # Zeitschritt
 
-
 # Darstellungs- und Steuerungs-Flags
 Hertzdipol = True
 Stabdipol = False
@@ -176,6 +175,7 @@ def Nullstelle(x1, x2, t, func):
     tol = 0.001
     max_iter = 25
     f1 = func(x1, t)
+
     f2 = func(x2, t)
     x_mid = None
     if f1 == 0:
@@ -718,12 +718,13 @@ def update(frame):
 # Erstelle Animation
 anim = FuncAnimation(fig, update, frames=int(_Periode), interval=100, blit=True)
 # Animation automatisch als GIF-Datei (eine Periodendauer) speichern
+print("\n Creating gif...")
 anim.save(
     "E-field-2D.gif",
     writer="pillow",
     fps=int(round(_Periode / _animation_duration)),
     dpi=300,
 )
-print("\nAnimation gespeichert als 'dipol_E_field.gif'")
+print("\nAnimation saved as 'dipol_E_field.gif'")
 
 # plt.show()

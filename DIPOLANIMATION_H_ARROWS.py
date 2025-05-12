@@ -21,10 +21,10 @@ _p0 = 100.0  # Amplitude des Dipolvektors
 _Wellenlaenge = 256.0  # Wellenlaenge (Simulationseinheiten)
 _Lamda_viertel = _Wellenlaenge / 4.0
 _w = 2 * np.pi * _c / _Wellenlaenge  # Kreisfrequenz
-_Periode = 120  # Anzahl Zeitschritte pro Periode
+_Periode = 100  # Anzahl Zeitschritte pro Periode
 _T = _Wellenlaenge / _c  # Periodendauer
 _dt = _T / _Periode  # Zeitschritt
-_animation_duration = 5  # Dauer der Animation in Sekunden
+_animation_duration = 3  # Dauer der Animation in Sekunden
 
 # Darstellungs- und Steuerungs-Flags
 Hertzdipol = True
@@ -539,10 +539,12 @@ def update(frame):
 anim = FuncAnimation(fig, update, frames=int(_Periode), interval=100, blit=False)
 
 # Animation automatisch als GIF-Datei speichern (optional)
+print("\n Creating gif...")
 anim.save(
     "H-field_2D.gif",
     writer="pillow",
     fps=int(round(_Periode / _animation_duration)),
     dpi=300,
 )
-plt.show()
+print("\nAnimation saved as 'dipol_E_field.gif'")
+# plt.show()

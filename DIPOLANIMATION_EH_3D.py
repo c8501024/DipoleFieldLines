@@ -1,6 +1,6 @@
 import numpy as np
 import pyvista as pv
-import math  # Für mathematische Funktionen wie radians, cos,
+import math
 import os
 import shutil
 import sys
@@ -656,5 +656,5 @@ for filename in file_list:
     images.append(imageio.imread(os.path.join("DipolAnimation", filename)))
 
 imageio.mimsave(
-    "EH-field-3D.gif", images, fps=int(round(_Periode / _animation_duration))
+    "EH-field-3D.gif", images, fps=int(round(_Periode / _animation_duration)), loop=0
 )

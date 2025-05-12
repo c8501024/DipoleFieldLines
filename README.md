@@ -135,4 +135,7 @@ Dominik Mair, University of Innsbruck
 
 *Example animations or screenshots coming soon.*
 
+![Alt Text](EH-field-3D.gif)
+![Alt Text](E-field-2D.gif)
+![Alt Text](H-field-2D.gif)
 ---
