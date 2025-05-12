@@ -142,13 +142,13 @@ If you use this software in teaching, research, or publication, please cite:
 
 ## 🖼️ Preview
 
-Here are some example animations of the dipole field:
+Here are some example animations of the dipole field: (takes some time to load due to high quality gif)
 
 **EH Field (3D)**  
-![EH Field](https://i.imgur.com/Po159GP.gif)
+![EH Field](EH-field-3D.gif)
 
 **E Field (2D)**  
-![E Field](https://i.imgur.com/2hGZaBV.gif)
+![E Field](E-field-2D.gif)
 
 **H Field (2D)**  
-![H Field](https://i.imgur.com/ur294bA.gif)
+![H Field](H-field-2D.gif)
