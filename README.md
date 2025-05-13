@@ -10,6 +10,8 @@ AI tools were used for coding.
 
 Statement of the developer:
 This code was written rather quickly with the help of AI. The main motivation behind it was the lack of easily customizable code for generating visually appealing field lines of a Hertzian dipole. Although I currently don't have the time to refactor the code for better readability, I still wanted to share it so that others can use it, create their own plots, or make use of the examples provided in the folder. Please excuse the poor code quality.
+
+
 ---
 
 ## 📁 Files and Outputs
