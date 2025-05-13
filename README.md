@@ -28,7 +28,6 @@ This code was written rather quickly with the help of AI. The main motivation be
 
 The scripts simulate electromagnetic fields of:
 - A **Hertzian dipole**: ideal, infinitesimally short antenna.
-- A **Finite-length dipole** (Stabdipol): two current sources.
 
 Field computations are based on:
 - Time-dependent dipole moment equations
