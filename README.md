@@ -5,8 +5,11 @@
 
 This repository contains three Python scripts for simulating and visualizing (output as gif animations) the electromagnetic fields of a Hertzian dipole (half wave dipole currently not fully supported). It includes both 2D and 3D visualizations of electric and magnetic fields as well as the energy (Poynting vector) flow.  For better visualization, the fields are normalized to their envelope before generating the field lines.
 The scripts are inspired by the animations as done by leifiphysik.
-The documentation is going to be reworked in the future. AI tools were used for coding.
+The documentation is going to be reworked in the future. 
+AI tools were used for coding.
 
+Statement of the developer:
+This code was written rather quickly with the help of AI. The main motivation behind it was the lack of easily customizable code for generating visually appealing field lines of a Hertzian dipole. Although I currently don't have the time to refactor the code for better readability, I still wanted to share it so that others can use it, create their own plots, or make use of the examples provided in the folder. Please excuse the poor code quality.
 ---
 
 ## 📁 Files and Outputs
