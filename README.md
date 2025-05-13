@@ -1,6 +1,3 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.15382818)
-
-
 # Dipole Field Animation Visualizations
 
 This repository contains three Python scripts for simulating and visualizing (output as gif animations) the electromagnetic fields of a Hertzian dipole (half wave dipole currently not fully supported). It includes both 2D and 3D visualizations of electric and magnetic fields as well as the energy (Poynting vector) flow.  For better visualization, the fields are normalized to their envelope before generating the field lines.
