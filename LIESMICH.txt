@@ -1,0 +1,11 @@
+Halbwellendipol / Hertzscher Dipol
+
+    pip install numpy matplotlib pillow
+    python feldlinien_halbwellendipol.py      (GIF wird im aktuellen Ordner gespeichert)
+
+
+Einstellungen (oben in jedem Skript)
+    N_FRAMES   Bilder pro Periode (80)
+    FRAME_MS   Anzeigedauer je Bild in ms (30 ms ~ 33 Bilder/s)
+    LW, LW_E, LW_H_VORNE, LW_H_HINTEN   Linienstärken
+    MS / GROESSE_Q                      Größe der Ladungsträger
